@@ -482,6 +482,48 @@
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">Outreach Volunteer</h4>
+
+              <span>August 2024 - December 2024</span>
+
+              <p class="timeline-text">
+                I am workig in the Outreach Team of the Student Placement Council at IIT Madras,
+                My primary work includes approaching and convincing HR's of various companies to come 
+                and visit our college for the recruitment process.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Design Head</h4>
+
+              <span>Jan 2024 - Present</span>
+
+              <p class="timeline-text">
+                I am workig as the Design Head at Sportify, the official Sports Club of IIT Madras, 
+                My primary work includes designing posters and videos, designing content for social media, 
+                designing the official website of the club, planning and exectuting various sporting events, etc.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PR Head</h4>
+
+              <span>May 2023 - Present</span>
+
+              <p class="timeline-text">
+                I am workig as the PR Head and Managing Editor at Devabhasha, the official Sanskrit Society of IIT Madras, 
+                My primary work includes designing the mmonthly sanskrit magazine, writing content for it, designing posters and videos
+                to make the magazine reach out to masses.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">Social Media Intern</h4>
 
               <span>Jan 2023 - March 2023</span>
@@ -521,11 +563,19 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Web design</h5>
-                <data value="80">70%</data>
+                <data value="70">70%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
               </div>
 
             </li>
@@ -534,11 +584,11 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Graphic design</h5>
-                <data value="70">80%</data>
+                <data value="80">80%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
 
             </li>
@@ -560,11 +610,11 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Python</h5>
-                <data value="50">95%</data>
+                <data value="95">95%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
+                <div class="skill-progress-fill" style="width: 95%;"></div>
               </div>
 
             </li>
@@ -670,8 +720,10 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
 
+            <input type="hidden" name="access_key" value="d7a93809-6d58-47e1-99b0-07ff21d6ffa1">
+          
             <div class="input-wrapper">
 
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -688,9 +740,35 @@
 
             </button>
 
-        </form>
+          </form>
 
         </section>
+
+        <script>
+          document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+        
+            // Send the form data using fetch API
+            fetch(this.action, {
+              method: this.method,
+              body: new FormData(this),
+            })
+            .then(response => response.json())
+            .then(result => {
+              if (result.success) {
+                // Redirect to thank-you page on successful form submission
+                window.location.href = 'thank-you.html';
+              } else {
+                // Handle errors or display an error message
+                alert('Something went wrong. Please try again.');
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              alert('There was an error submitting the form.');
+            });
+          });
+        </script>
 
       </article>
 
@@ -698,23 +776,3 @@
       
 
   </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
-</html>
