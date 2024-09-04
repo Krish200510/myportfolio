@@ -50,10 +50,6 @@ The contact form uses the Fetch API to submit data. The script in `./assets/js/s
 
 If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 For any inquiries or feedback, you can reach me at [23f2000792@ds.study.iitm.ac.in](mailto:23f2000792@ds.study.iitm.ac.in) or connect with me on [LinkedIn](https://www.linkedin.com/in/krish-gupta-11612327a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app).
