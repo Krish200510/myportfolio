@@ -29,10 +29,6 @@ To run this project locally, follow these steps:
    ```bash
    cd YourRepository
    ```
-
-3. **Open the HTML File**:
-   Open `index.html` in your preferred web browser to view the portfolio.
-
 ## Customization
 
 You can customize the following sections:
