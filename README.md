@@ -1,7 +1,3 @@
-Here's a README file tailored for your GitHub page based on the provided HTML code for your portfolio website:
-
----
-
 # Krish Gupta - Personal Portfolio
 
 Welcome to my personal portfolio website! This project showcases my skills, experience, and projects in a clean and interactive format. The website is designed to be a comprehensive overview of my professional background and interests.
@@ -62,6 +58,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or feedback, you can reach me at [23f2000792@ds.study.iitm.ac.in](mailto:23f2000792@ds.study.iitm.ac.in) or connect with me on [LinkedIn](https://www.linkedin.com/in/krish-gupta-11612327a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app).
 
----
-
-Feel free to adjust any of the details, such as links or sections, based on your specific needs and project updates.
